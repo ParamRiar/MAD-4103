@@ -4,23 +4,44 @@
       <meta name = "viewport" content = "width = device-width, initial-scale = 1">
       <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
       <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
-      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-	  <script type="text/javascript">
-	  $(document).bind("mobileinit", function () {
-    	$.mobile.ajaxEnabled = false;
-	});
-</script>
+      <script>
+         $( document ).on( "pagecreate", function() {
+            $( "body > [data-role = 'panel']" ).panel();
+            $( "body > [data-role = 'panel'] [data-role = 'listview']" ).listview();
+         });
+         
+         $( document ).one( "pageshow", function() {
+            $( "body > [data-role = 'header']" ).toolbar();
+            $( "body > [data-role = 'header'] [data-role = 'navbar']" ).navbar();
+         });
+      </script>
+
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script type="text/javascript" src="assets/js/activeClass.js"></script>
    </head>
 
    <body>
+ <div id = "book">
+         <span style = "color:orange"></span>
+        
 
-
-   	<div data-role = "page" id = "p1">
+        
+      
+      </div>
+   	<div data-role = "panel" id = "p1" data-position = "right" 
+            data-display = "overlay" data-theme = "b">
          <div data-role = "header">
+
             <h1>The Last Leaf
             </h1>
+            <ul data-role = "listview">
+               <li data-icon = "delete"><a href = "#" data-rel = "close">Close</a></li>
+               <li> <a href="book.html"  rel="external" data-ajax="false">
+            <img src="img/book9.jpg" alt="Photo"  data-equalizer-watch width="100px" height="100px" ></a></li>
+               <li><a href="book.html"  rel="external" data-ajax="false">
+            <img src="img/book8.jpg" alt="Photo"  data-equalizer-watch width="100px" height="100px" ></a></li>
+               <li>South Africa</li>
+            </ul>
          </div>
 
          <div data-role = "main" class = "ui-content">
@@ -428,6 +449,6 @@
          </div>
       </div>
 
-
+</div>
       </body>
 </html>

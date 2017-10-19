@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+   <head>
+      <title>Swipe Event</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+      
+      
+      <script>
+         $(document).on("pagecreate","#page1",function(event) {
+            $(window).on("orientationchange",function() {
+               if(window.orientation == 0) {
+                  $("p").text("portrait orientation!!!");
+               } else {
+                  $("p").text("landscape orientation!!!");
+               }
+            });
+         });
+      </script>
+   </head>
+   
+   <body>
+      <div data-role = "page" id = "page1">
+         <div data-role = "header">
+            <h2>Header</h2>
+         </div>
+
+         <div data-role = "main" class = "ui-content">
+            <p>It will display the text when you swipe here.</p>
+            <span style = "color:orange"></span>
+         </div>
+
+         <div data-role = "footer">
+            <h2>Footer</h2>
+         </div>
+      
+      </div>
+   </body>
+</html>
