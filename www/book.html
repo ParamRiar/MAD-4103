@@ -1,64 +1,175 @@
-<!DOCTYPE html>
+
 <html>
    <head>
       <meta name = "viewport" content = "width = device-width, initial-scale = 1">
       <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
       <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
       <script>
-         $( document ).on( "pagecreate", function() {
-            $( "body > [data-role = 'panel']" ).panel();
-            $( "body > [data-role = 'panel'] [data-role = 'listview']" ).listview();
+           $( document ).on( "pagecreate","#p1", function() {
+            $( document ).on( "swipeleft swiperight", "#p1", function( e ) {
+               if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+                  if ( e.type === "swipeleft" ) {
+                     $( "#right-panel" ).panel( "open" );
+                  } else if ( e.type === "swiperight" ) {
+                     $( "#left-panel" ).panel( "open" );
+                  }
+               }
+            });
+			});
+			$( document ).on( "pagecreate","#p2", function() {
+		
+			 $( document ).on( "swipeleft swiperight", "#p2", function( e ) {
+			
+               if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+                  if ( e.type === "swipeleft" ) {
+                     $( "#right-panel1" ).panel( "open" );
+                  } else if ( e.type === "swiperight" ) {
+                     $( "#left-panel" ).panel( "open" );
+                  }
+               }
+            });
          });
-         
-         $( document ).one( "pageshow", function() {
-            $( "body > [data-role = 'header']" ).toolbar();
-            $( "body > [data-role = 'header'] [data-role = 'navbar']" ).navbar();
+		 $( document ).on( "pagecreate","#p3", function() {
+		
+			 $( document ).on( "swipeleft swiperight", "#p3", function( e ) {
+			
+               if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+                  if ( e.type === "swipeleft" ) {
+                     $( "#right-panel2" ).panel( "open" );
+                  } else if ( e.type === "swiperight" ) {
+                     $( "#left-panel" ).panel( "open" );
+                  }
+               }
+            });
+         });
+		 $( document ).on( "pagecreate","#p4", function() {
+		
+			 $( document ).on( "swipeleft swiperight", "#p4", function( e ) {
+			
+               if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+                  if ( e.type === "swipeleft" ) {
+                     $( "#right-panel3" ).panel( "open" );
+                  } else if ( e.type === "swiperight" ) {
+                     $( "#left-panel" ).panel( "open" );
+                  }
+               }
+            });
+         });
+		 $( document ).on( "pagecreate","#p5", function() {
+		
+			 $( document ).on( "swipeleft swiperight", "#p5", function( e ) {
+			
+               if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+                  if ( e.type === "swipeleft" ) {
+                     $( "#right-panel4" ).panel( "open" );
+                  } else if ( e.type === "swiperight" ) {
+                     $( "#left-panel" ).panel( "open" );
+                  }
+               }
+            });
+         });
+		 $( document ).on( "pagecreate","#p6", function() {
+		
+			 $( document ).on( "swipeleft swiperight", "#p6", function( e ) {
+			
+               if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+                  if ( e.type === "swipeleft" ) {
+                     $( "#right-panel1" ).panel( "open" );
+                  } else if ( e.type === "swiperight" ) {
+                     $( "#left-panel" ).panel( "open" );
+                  }
+               }
+            });
+         });
+		 $( document ).on( "pagecreate","#p7", function() {
+		
+			 $( document ).on( "swipeleft swiperight", "#p7", function( e ) {
+			
+               if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+                  if ( e.type === "swipeleft" ) {
+                     $( "#right-panel6" ).panel( "open" );
+                  } else if ( e.type === "swiperight" ) {
+                     $( "#left-panel" ).panel( "open" );
+                  }
+               }
+            });
+         });
+		 $( document ).on( "pagecreate","#p8", function() {
+		
+			 $( document ).on( "swipeleft swiperight", "#p8", function( e ) {
+			
+               if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+                  if ( e.type === "swipeleft" ) {
+                     $( "#right-panel7" ).panel( "open" );
+                  } else if ( e.type === "swiperight" ) {
+                     $( "#left-panel" ).panel( "open" );
+                  }
+               }
+            });
+         });
+		 $( document ).on( "pagecreate","#p9", function() {
+		
+			 $( document ).on( "swipeleft swiperight", "#p9", function( e ) {
+			
+               if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+                  if ( e.type === "swipeleft" ) {
+                     $( "#right-panel8" ).panel( "open" );
+                  } else if ( e.type === "swiperight" ) {
+                     $( "#left-panel" ).panel( "open" );
+                  }
+               }
+            });
          });
       </script>
+	   
 
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script type="text/javascript" src="assets/js/activeClass.js"></script>
    </head>
 
    <body>
- <div id = "book">
-         <span style = "color:orange"></span>
-        
-
-        
-      
-      </div>
-   	<div data-role = "panel" id = "p1" data-position = "right" 
-            data-display = "overlay" data-theme = "b">
+	  <div data-role = "page" id = "p1">
          <div data-role = "header">
-
             <h1>The Last Leaf
             </h1>
-            <ul data-role = "listview">
+         </div>
+	  
+	    <div data-role = "main" class = "ui-content">
+            <h2>O. Henry</h2>
+           
+            
+            
+             
+             <div class = "ui-grid-b">
+             	
+         
+         	 <div class = "ui-block-c">
+             <a href = "#p2" class="ui-btn" data-transition = "flip">Start Reading</a>
+         </div>
+        
+         
+         </div>
+         </div>
+		 
+		       
+         <div data-role = "panel" id = "right-panel" data-display = "push" 
+            data-position = "right" data-theme = "b">
+                      
+			    <ul data-role = "listview">
                <li data-icon = "delete"><a href = "#" data-rel = "close">Close</a></li>
                <li> <a href="book.html"  rel="external" data-ajax="false">
-            <img src="img/book9.jpg" alt="Photo"  data-equalizer-watch width="100px" height="100px" ></a></li>
+            <img src="img/book1.jpg" alt="Photo"  data-equalizer-watch width="100px" height="100px" ></a></li>
                <li><a href="book.html"  rel="external" data-ajax="false">
-            <img src="img/book8.jpg" alt="Photo"  data-equalizer-watch width="100px" height="100px" ></a></li>
-               <li>South Africa</li>
+            <img src="img/book2.jpg" alt="Photo"  data-equalizer-watch width="100px" height="100px" ></a></li>
+             
             </ul>
          </div>
 
-         <div data-role = "main" class = "ui-content">
-            <h2>O. Henry</h2>
-            
-            
-            <div class = "ui-block-c">
-             <a href = "#p2" class = "ui-btn ui-btn-icon-left  ui-icon-carat-r" data-transition = "flip"></a>
-         </div>
-         </div>
-
          <div data-role = "footer">
-            <h1>Copyright by O. Henry </h1>
+            <h1>Copyright by O. Henry</h1>
          </div>
       </div>
-
-
+	  
  	
    	<div data-role = "page" id = "p2">
          <div data-role = "header">
@@ -69,7 +180,13 @@
          <div data-role = "main" class = "ui-content">
             <h2>Introduction</h2>
             <p>
-            	The story is set in Greenwich Village. It tells the story of an old artist who saves the life of a young artist, dying of pneumonia, by giving her the will to live. She can see a tree through the window gradually losing its leaves, and has taken it into her head that she will die when the last leaf falls. Seemingly, it never does fall, and she survives. We learn that in reality the tree lost all its leaves. What what she thought she saw was a leaf, painted on the wall with perfect realism, by the old artist. The old artist dies of pneumonia contracted while being out in the wet and cold, painting the last leaf.
+            	The story is set in Greenwich Village. It tells the story of an old artist who 
+				saves the life of a young artist, dying of pneumonia, by giving her the will to 
+				live. She can see a tree through the window gradually losing its leaves, and has taken 
+				it into her head that she will die when the last leaf falls. Seemingly, it never does fall,
+				and she survives. We learn that in reality the tree lost all its leaves. What what she thought
+				she saw was a leaf, painted on the wall with perfect realism, by the old artist. The old artist 
+				dies of pneumonia contracted while being out in the wet and cold, painting the last leaf.
             </p>
             
             
@@ -90,6 +207,19 @@
         
          
          </div>
+         </div>
+		  <div data-role = "panel" id = "right-panel1" data-display = "push" 
+            data-position = "right" data-theme = "b">
+           
+           
+			    <ul data-role = "listview">
+               <li data-icon = "delete"><a href = "#" data-rel = "close">Close</a></li>
+               <li> <a href="book.html"  rel="external" data-ajax="false">
+            <img src="img/book1.jpg" alt="Photo"  data-equalizer-watch width="100px" height="100px" ></a></li>
+               <li><a href="book.html"  rel="external" data-ajax="false">
+            <img src="img/book2.jpg" alt="Photo"  data-equalizer-watch width="100px" height="100px" ></a></li>
+             
+            </ul>
          </div>
 
          <div data-role = "footer">
@@ -141,7 +271,19 @@
          
          </div>
          </div>
-
+ <div data-role = "panel" id = "right-panel2" data-display = "push" 
+            data-position = "right" data-theme = "b">
+           
+           
+			    <ul data-role = "listview">
+               <li data-icon = "delete"><a href = "#" data-rel = "close">Close</a></li>
+               <li> <a href="book.html"  rel="external" data-ajax="false">
+            <img src="img/book1.jpg" alt="Photo"  data-equalizer-watch width="100px" height="100px" ></a></li>
+               <li><a href="book.html"  rel="external" data-ajax="false">
+            <img src="img/book2.jpg" alt="Photo"  data-equalizer-watch width="100px" height="100px" ></a></li>
+             
+            </ul>
+         </div>
          <div data-role = "footer">
             <h1>Copyright by O. Henry</h1>
          </div>
@@ -199,7 +341,19 @@
          
          </div>
          </div>
-
+ <div data-role = "panel" id = "right-panel3" data-display = "push" 
+            data-position = "right" data-theme = "b">
+           
+           
+			    <ul data-role = "listview">
+               <li data-icon = "delete"><a href = "#" data-rel = "close">Close</a></li>
+               <li> <a href="book.html"  rel="external" data-ajax="false">
+            <img src="img/book1.jpg" alt="Photo"  data-equalizer-watch width="100px" height="100px" ></a></li>
+               <li><a href="book.html"  rel="external" data-ajax="false">
+            <img src="img/book2.jpg" alt="Photo"  data-equalizer-watch width="100px" height="100px" ></a></li>
+             
+            </ul>
+         </div>
          <div data-role = "footer">
             <h1>Copyright by O. Henry</h1>
          </div>
@@ -251,7 +405,19 @@
          
          </div>
          </div>
-
+ <div data-role = "panel" id = "right-panel4" data-display = "push" 
+            data-position = "right" data-theme = "b">
+           
+           
+			    <ul data-role = "listview">
+               <li data-icon = "delete"><a href = "#" data-rel = "close">Close</a></li>
+               <li> <a href="book.html"  rel="external" data-ajax="false">
+            <img src="img/book1.jpg" alt="Photo"  data-equalizer-watch width="100px" height="100px" ></a></li>
+               <li><a href="book.html"  rel="external" data-ajax="false">
+            <img src="img/book2.jpg" alt="Photo"  data-equalizer-watch width="100px" height="100px" ></a></li>
+             
+            </ul>
+         </div>
          <div data-role = "footer">
             <h1>Copyright by O. Henry</h1>
          </div>
@@ -298,7 +464,19 @@
          
          </div>
          </div>
-
+ <div data-role = "panel" id = "right-panel5" data-display = "push" 
+            data-position = "right" data-theme = "b">
+           
+           
+			    <ul data-role = "listview">
+               <li data-icon = "delete"><a href = "#" data-rel = "close">Close</a></li>
+               <li> <a href="book.html"  rel="external" data-ajax="false">
+            <img src="img/book1.jpg" alt="Photo"  data-equalizer-watch width="100px" height="100px" ></a></li>
+               <li><a href="book.html"  rel="external" data-ajax="false">
+            <img src="img/book2.jpg" alt="Photo"  data-equalizer-watch width="100px" height="100px" ></a></li>
+             
+            </ul>
+         </div>
          <div data-role = "footer">
             <h1>Copyright by O. Henry</h1>
          </div>
@@ -347,7 +525,19 @@
         
          
          </div>
-         
+          <div data-role = "panel" id = "right-panel6" data-display = "push" 
+            data-position = "right" data-theme = "b">
+           
+           
+			    <ul data-role = "listview">
+               <li data-icon = "delete"><a href = "#" data-rel = "close">Close</a></li>
+               <li> <a href="book.html"  rel="external" data-ajax="false">
+            <img src="img/book1.jpg" alt="Photo"  data-equalizer-watch width="100px" height="100px" ></a></li>
+               <li><a href="book.html"  rel="external" data-ajax="false">
+            <img src="img/book2.jpg" alt="Photo"  data-equalizer-watch width="100px" height="100px" ></a></li>
+             
+            </ul>
+         </div>
 
          <div data-role = "footer">
             <h1>Copyright by O. Henry</h1>
@@ -403,7 +593,19 @@
          
          </div>
          </div>
-
+ <div data-role = "panel" id = "right-panel7" data-display = "push" 
+            data-position = "right" data-theme = "b">
+           
+           
+			    <ul data-role = "listview">
+               <li data-icon = "delete"><a href = "#" data-rel = "close">Close</a></li>
+               <li> <a href="book.html"  rel="external" data-ajax="false">
+            <img src="img/book1.jpg" alt="Photo"  data-equalizer-watch width="100px" height="100px" ></a></li>
+               <li><a href="book.html"  rel="external" data-ajax="false">
+            <img src="img/book2.jpg" alt="Photo"  data-equalizer-watch width="100px" height="100px" ></a></li>
+             
+            </ul>
+         </div>
          <div data-role = "footer">
             <h1>Copyright by O. Henry</h1>
          </div>
@@ -443,12 +645,25 @@
          
          </div>
          </div>
-
+ <div data-role = "panel" id = "right-panel8" data-display = "push" 
+            data-position = "right" data-theme = "b">
+           
+           
+			    <ul data-role = "listview">
+               <li data-icon = "delete"><a href = "#" data-rel = "close">Close</a></li>
+               <li> <a href="book.html"  rel="external" data-ajax="false">
+            <img src="img/book1.jpg" alt="Photo"  data-equalizer-watch width="100px" height="100px" ></a></li>
+               <li><a href="book.html"  rel="external" data-ajax="false">
+            <img src="img/book2.jpg" alt="Photo"  data-equalizer-watch width="100px" height="100px" ></a></li>
+             
+            </ul>
+         </div>
          <div data-role = "footer">
             <h1>Copyright by O. Henry</h1>
          </div>
       </div>
 
-</div>
+
+    
       </body>
 </html>
