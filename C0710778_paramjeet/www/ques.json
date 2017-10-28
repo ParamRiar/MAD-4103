@@ -1,0 +1,85 @@
+ {
+  
+    "question": "Which of the following is a valid type of function javascript supports?",
+    "choices": ["named function","anonymous function"," Both of the above","None of above"],
+    "correctAnswer": 2
+  }, {
+    "question": "Which built-in method reverses the order of the elements of an array?",
+    "choices": ["changeOrder(order)","reverse()","sort(order)","None of above"],
+    "correctAnswer": 1
+  }, {
+    "question": " Which built-in method sorts the elements of an array?",
+    "choices": ["changeOrder(order)","order()","sort()","None of Above"],
+    "correctAnswer": 2
+  }, {
+    "question": "Which of the following jQuery method gets the html contents (innerHTML) of the first matched element?",
+    "choices": ["html( )","getHtml( )","getInnerHtml( )","None of Above"],
+    "correctAnswer": 0
+  }, {
+    "question": "What are debugging techniques available in android?",
+   "choices": ["DDMS","Breaking Point","Memory Profile","All of Above"],
+   " correctAnswer": 3
+  }, {
+    "question": "Which of the following jQuery method adds the previous selection to the current selection?",
+    "choices": ["add( selector )","andSelf( )","append(selector)","None of above"],
+    "correctAnswer": 1
+  }, {
+    "question": "How to find JSON element length in android?",
+    "choices": ["count()","sum()","add()","length()"],
+    "correctAnswer": 3
+  }, {
+    "question": "Which is magic constant of PHP return class method name?",
+    "choices": ["_METHOD_","_FILE_","_FUNCTION_","_CLASS_"],
+    "correctAnswer": 0
+  }, {
+    "question": "Which function is use to read file content?",
+    "choices": ["fopen()","fread()","filesize()","file_exist()"],
+    "correctAnswer": 1
+  }, {
+    "question": "Which function is use to get cookies in PHP?",
+    "choices": ["getcookie()","$_COOKIE","isset()","None of Above"],
+    "correctAnswer": 1
+  },{
+    "question": "Which of the following jQuery method finds all sibling elements after the current element?",
+    "choices": [" locateNextAll( selector )","getNextAll( selector)","nextAll( selector )","None of above"],
+    "correctAnswer": 2
+  }, {
+    "question": "What is size of short variable?",
+    "choices": [8,16,32,64],
+    "correctAnswer": 2
+  }, {
+    "question": "What is default value of int?",
+    "choices": [0,"0.0","null","Not of Above"],
+    "correctAnswer": 0
+  }, {
+    "question": "What is default value of local variable?",
+    "choices": ["null",0,"depend on variable","not assign"],
+    "correctAnswer": 3
+  }, {
+    "question": "Which of the following jQuery method checks if event.stopPropagation() was ever called on this event object?",
+    "choices": ["isDefaultPrevented( )","isPropagationStopped( )","isImmediatePropagationStopped( )","None of Above"],
+    "correctAnswer": 1
+  }, {
+    "question": "Can you assign anonymous function to a variable?",
+    "choices": ["true","false"],
+    "correctAnswer": 0
+  }, {
+    "question": "Which of the following jQuery method gets the inner width (excluding the border) of an element?",
+    "choices": ["getCSSWidth( )","innerWidth( )","getInnerWidth( )","none of above"],
+    "correctAnswer": 1
+  }, {
+    "question": "Which is JQuery method sets the height property of element?",
+    "choices": ["set height()","set height(value)","height(value)","None of Above"],
+    "correctAnswer": 2
+  }, {
+    "question": "Which return the character at specific index?",
+    "choices": ["characterAt()","charAt()","getcharAt()","None of Above"],
+    "correctAnswer": 1
+  },
+   {
+    "question": "Which of the following jQuery method serializes a set of input elements into a string of data?",
+     "choices":[" jQuery.ajax( options )","jQuery.ajaxSetup( options )","serialize( )","serializeArray( )"],
+   "correctAnswer": 2
+  }
+  
+ 
